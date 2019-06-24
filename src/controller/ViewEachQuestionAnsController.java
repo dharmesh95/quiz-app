@@ -102,6 +102,10 @@ public class ViewEachQuestionAnsController {
         }
     }
 
+    public void initialize() {
+        displayQuestion(1);
+    }
+
 
     private void displayQuestion(int questionNo) {
         labelQuestionNo.setText(String.valueOf(questionNo));

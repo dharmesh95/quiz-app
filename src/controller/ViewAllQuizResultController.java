@@ -51,10 +51,11 @@ public class ViewAllQuizResultController implements Initializable {
         lineChart.getData().clear();
         barChart.getData().clear();
         pieChart.getData().clear();
+        showLineChart();
     }
 
     @FXML
-    public void showLineChart(ActionEvent event) {
+    public void showLineChart() {
         lineChart.getData().clear();
         XYChart.Series series = new XYChart.Series();
         series.getData().add(new XYChart.Data("1", 7));
